@@ -10,11 +10,13 @@
 
 ## Data Overview and Test Split
 The dataset consists of 5,574 SMS messages that have been manually labeled as either "spam" or "ham" (a legitimate message). Overall, 13.41% of the dataset consisted of spam messages. I chose an 80:20 train:test split and confirmed that each set had roughly 13% spam content. 
+
 ![image](https://user-images.githubusercontent.com/97380323/177211197-ae9aae90-3e3b-4b1c-9684-839d2ac2cd97.png)
 
 
 ## Data Cleaning
-I "dummy-coded" the "SMS" and split it into a number of distinct columns, each representing one word in the training set vocabulary. For each row, each column contains an integer representing the number of instances of a specific word in that message. This required reformatting the "SMS" column to remove all punctuation and casing.  
+I "dummy-coded" the "SMS" and split it into a number of distinct columns, each representing one word in the training set vocabulary. For each row, each column contains an integer representing the number of instances of a specific word in that message. This required reformatting the "SMS" column to remove all punctuation and casing. 
+
 ![image](https://user-images.githubusercontent.com/97380323/177211130-cea7e613-82e6-4eff-8240-f55dcc588e4e.png)
 
 ## Computing Constants and Parameters
